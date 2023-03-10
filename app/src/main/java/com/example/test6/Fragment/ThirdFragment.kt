@@ -63,7 +63,7 @@ class ThirdFragment : Fragment() {
 
 
             val apiService = AppClientManager.client.create(FoodApiService::class.java)
-            apiService.index(data).enqueue(object : Callback<Posts> {
+            apiService.GETindex(data).enqueue(object : Callback<Posts> {
                 override fun onResponse(call: Call<Posts>, response: Response<Posts>) {
                     val list = response.body()
 //                    list?.let {
@@ -79,14 +79,15 @@ class ThirdFragment : Fragment() {
                     url=list.hints.get(0).food.image
                     image.load(url)
 
-
-
                 }
 
                 override fun onFailure(call: retrofit2.Call<Posts>, t: Throwable) {
-
                 }
             })
+
+
+
+
 
 
         }
