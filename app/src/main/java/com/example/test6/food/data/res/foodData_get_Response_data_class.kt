@@ -1,11 +1,11 @@
 package com.example.test6.food.data.res
 
 
-import com.example.test6.food.data.req.Hint
-import com.example.test6.food.data.req.Links
+import com.example.test6.food.data.foodDatabase_data.Hint
+import com.example.test6.food.data.foodDatabase_data.Links
 import com.google.gson.annotations.SerializedName
 
-data class response_data_class(
+data class foodData_get_Response_data_class(
 @SerializedName("_links")
 val _links: Links,
 @SerializedName("hints")

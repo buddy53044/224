@@ -17,7 +17,7 @@ import retrofit2.converter.gson.GsonConverterFactory
 import retrofit2.Call
 import retrofit2.Callback
 import retrofit2.Response
-import com.example.test6.food.data.req.*
+import com.example.test6.food.data.foodDatabase_data.*
 import com.example.test6.food.data.res.*
 
 
@@ -36,7 +36,7 @@ class ThirdFragment : Fragment() {
 
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)
-        lateinit var getDataClass: response_data_class
+        lateinit var getDataClass: foodData_get_Response_data_class
         var url:String?=null
         var foodId: String
         var measureURI: String=""
@@ -56,19 +56,22 @@ class ThirdFragment : Fragment() {
 
 
 
-        btn_query.setOnClickListener {
+        btn_foodGET.setOnClickListener {
             GET_Query_data["ingr"] =ed.text.toString()
             Log.d("Huang",GET_Query_data.toString())
 
             val apiService = AppClientManager.client.create(FoodApiService::class.java)
-            apiService.GETindex(GET_Query_data).enqueue(object : Callback<response_data_class> {
-                override fun onResponse(call: Call<response_data_class>, response: Response<response_data_class>) {
+            apiService.GETindex(GET_Query_data).enqueue(object : Callback<foodData_get_Response_data_class> {
+                override fun onResponse(call: Call<foodData_get_Response_data_class>, response: Response<foodData_get_Response_data_class>) {
                   val list = response.body()
-                    if (list != null) {
-                        getDataClass= list
-                    }
-                    tv.text =list!!.hints.get(0).toString()
-
+//                    if (list != null) {
+//                        getDataClass= list
+//                    }
+//                    tv.text =list!!.hints.get(0).toString()
+                    var e=list!!.hints.get(0).food.nutrients.FIBTG.toString()
+                    var str=resources.getString(R.string.FIBTG_unit)
+                    var str2=resources.getString(R.string.FIBTG)
+                    tv.text="$e+$str+$str2"
 
 //                    Log.d("foodId", getDataClass.hints.get(0).food.foodId)
 //                    Log.d("getDataClass", getDataClass.hints.get(0).toString())
@@ -80,7 +83,7 @@ class ThirdFragment : Fragment() {
 
                 }
 
-                override fun onFailure(call: retrofit2.Call<response_data_class>, t: Throwable) {
+                override fun onFailure(call: retrofit2.Call<foodData_get_Response_data_class>, t: Throwable) {
                 }
             })
 
@@ -105,7 +108,7 @@ class ThirdFragment : Fragment() {
 
 //        val sendMessages: MutableList<Ingredient> = mutableListOf()
 //        Log.i("s", getDataClass.toString())
-        btn_post.setOnClickListener{
+        btn_foodPOST.setOnClickListener{
 
 //            val reqMessage =Ingredient(foodId = getDataClass.hints.get(0).food.foodId,
 //            measureURI = getDataClass.hints.get(0).measures.get(0).uri,
@@ -138,8 +141,8 @@ class ThirdFragment : Fragment() {
 //                quantity = getDataClass.hints.get(0).food.servingSizes.get(0).quantity
 //                quantity=null
 
-            ).enqueue(object : Callback<request_data_class> {
-                override fun onResponse(call: Call<request_data_class>, response: Response<request_data_class>) {
+            ).enqueue(object : Callback<foodData_post_Request_data_class> {
+                override fun onResponse(call: Call<foodData_post_Request_data_class>, response: Response<foodData_post_Request_data_class>) {
                     val te = response.body()
 //                    list?.let {
 //                        for (p2 in it) {
@@ -152,11 +155,10 @@ class ThirdFragment : Fragment() {
                     Log. i("ttt",te.toString())
 
                 }
-                override fun onFailure(call: retrofit2.Call<request_data_class>, t: Throwable) {
+                override fun onFailure(call: retrofit2.Call<foodData_post_Request_data_class>, t: Throwable) {
                     Log.i ("ttt","error")
                 }
             })
-
 
         }
 

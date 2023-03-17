@@ -1,9 +1,9 @@
 package com.example.test6
 
-import com.example.test6.food.data.req.*
+import com.example.test6.food.data.foodDatabase_data.*
 
-import com.example.test6.food.data.res.response_data_class
-import com.example.test6.food.data.res.request_data_class
+import com.example.test6.food.data.res.foodData_get_Response_data_class
+import com.example.test6.food.data.res.foodData_post_Request_data_class
 import retrofit2.Call
 import retrofit2.http.*
 
@@ -13,7 +13,7 @@ interface FoodApiService {
     @GET("api/food-database/v2/parser")
     fun GETindex(
         @QueryMap GET_Query_data: Map<String, String,>
-    ): Call<response_data_class>
+    ): Call<foodData_get_Response_data_class>
 
 
 //    @Headers("Content-Type: application/json")
@@ -29,7 +29,7 @@ interface FoodApiService {
         @Query("quantity") quantity: Double?
 //        @Query("ingredients")
 //        @Field("foodId")  food: Food
-    ):Call<request_data_class>
+    ):Call<foodData_post_Request_data_class>
 
 
 }

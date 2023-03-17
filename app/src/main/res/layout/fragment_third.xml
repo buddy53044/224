@@ -43,27 +43,27 @@
       <EditText
           android:id="@+id/ed"
 
-          android:layout_width="200dp"
+          android:layout_width="145dp"
           android:layout_height="wrap_content"
           android:layout_gravity="center"
           android:background="@null"
           android:hint="請輸入文字" />
 
       <Button
-          android:id="@+id/btn_query"
+          android:id="@+id/btn_foodGET"
           android:layout_width="wrap_content"
           android:layout_height="wrap_content"
 
-          android:text="GET" />
+          android:text="foodGET" />
 
       <Button
-          android:id="@+id/btn_post"
+          android:id="@+id/btn_foodPOST"
           android:layout_width="wrap_content"
           android:layout_height="wrap_content"
 
 
           android:layout_marginStart="8dp"
-          android:text="POST" />
+          android:text="foodPOST" />
 
    </LinearLayout>
 

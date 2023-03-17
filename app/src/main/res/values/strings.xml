@@ -2,4 +2,129 @@
     <string name="app_name">Test6</string>
     <!-- TODO: Remove or change this placeholder text -->
     <string name="hello_blank_fragment">Hello blank fragment</string>
+
+    //Nutrient
+    <string name="SUGAR.added">添加糖</string>
+    <string name="CA">鈣</string>
+    <string name="CHOCDF.net">淨碳水化合物</string>
+    <string name="CHOCDF">碳水化合物（總量）</string>
+    <string name="CHOLE">膽固醇</string>
+    <string name="ENERC_KCAL">熱量</string>
+    <string name="FAMS">單不飽和脂肪酸</string>
+    <string name="FAPU">多不飽和脂肪酸</string>
+    <string name="FASAT">飽和脂肪酸</string>
+    <string name="FATRN">反式脂肪酸</string>
+    <string name="FIBTG">膳食纖維</string>
+    <string name="FOLDFE">葉酸當量</string>
+    <string name="FOLFD">葉酸（食物來源）</string>
+    <string name="FOLAC">葉酸</string>
+    <string name="FE">鐵</string>
+    <string name="MG">鎂</string>
+    <string name="NIA">菸酸</string>
+    <string name="P">磷</string>
+    <string name="K">鉀</string>
+    <string name="PROCNT">蛋白質</string>
+    <string name="RIBF">核黃素</string>
+    <string name="NA">鈉</string>
+    <string name="Sugar.alcohol">糖醇</string>
+    <string name="SUGAR">總糖</string>
+    <string name="THIA">硫胺素</string>
+    <string name="FAT">總脂肪</string>
+    <string name="VITA_RAE">維生素 A（RAE）</string>
+    <string name="VITB12">維生素 B-12</string>
+    <string name="VITB6A">維生素 B-6</string>
+    <string name="VITC">維生素 C（抗壞血酸）</string>
+    <string name="VITD">維生素 D（D2 + D3）</string>
+    <string name="TOCPHA">維生素 E（α-生育酚）</string>
+    <string name="VITK1">維生素 K（植物酮）</string>
+    <string name="WATER">水分</string>
+    <string name="ZN">鋅</string>
+    //Nutrient.unit
+    <string name="SUGAR.added.unit">g</string>
+    <string name="CA.unit">mg</string>
+    <string name="CHOCDF.net.unit">g</string>
+    <string name="CHOCDF.unit">g</string>
+    <string name="CHOLE.unit">mg</string>
+    <string name="ENERC_KCAL.unit">kcal</string>
+    <string name="FAMS.unit">g</string>
+    <string name="FAPU.unit">g</string>
+    <string name="FASAT.unit">g</string>
+    <string name="FATRN.unit">g</string>
+    <string name="FIBTG.unit">g</string>
+    <string name="FOLDFE.unit">µg</string>
+    <string name="FOLFD.unit">µg</string>
+    <string name="FOLAC.unit">µg</string>
+    <string name="FE.unit">mg</string>
+    <string name="MG.unit">mg</string>
+    <string name="NIA.unit">mg</string>
+    <string name="P.unit">mg</string>
+    <string name="K.unit">mg</string>
+    <string name="PROCNT.unit">g</string>
+    <string name="RIBF.unit">mg</string>
+    <string name="NA.unit">mg</string>
+    <string name="Sugar.alcohol.unit">g</string>
+    <string name="SUGAR.unit">g</string>
+    <string name="THIA.unit">mg</string>
+    <string name="FAT.unit">g</string>
+    <string name="VITA_RAE.unit">µg</string>
+    <string name="VITB12.unit">µg</string>
+    <string name="VITB6A.unit">mg</string>
+    <string name="VITC.unit">mg</string>
+    <string name="VITD.unit">µg</string>
+    <string name="TOCPHA.unit">mg</string>
+    <string name="VITK1.unit">µg</string>
+    <string name="WATER.unit">g</string>
+    <string name="ZN.unit">mg</string>
+
+    //Category
+    <string name="generic_foods">任何一般非品牌食品</string>//，即搜索“蘋果”與此類別一起返回關於一般“蘋果”及其品種的信息。
+    <string name="packaged_foods">已生產為消費者包裝商品（CPG）的任何食品</string>//，即搜索“蘋果”的結果之一返回來自“蘋果之國”的“蘋果”包裝和品牌。
+    <string name="generic_meals">由其他基本食品組成的任何通用（非品牌）食品</string>//，這些通常會附帶一份成分清單。即搜索“蘋果”返回“蘋果脆皮烤蘋果”。
+    <string name="fast_foods">由連鎖餐廳提供的任何食品</string>。即搜索“蘋果”返回由“bareburger”提供的“蘋果”。
+    //Diet Labels
+
+    <string name="BALANCED">平衡飲食</string>
+    <string name="HIGH_FIBER">高纖飲食</string>
+    <string name="HIGH_PROTEIN">高蛋白飲食</string>
+    <string name="LOW_CARB">低碳水化合物飲食</string>
+    <string name="LOW_FAT">低脂肪飲食</string>
+    <string name="LOW_SODIUM">低鈉飲食</string>
+    //Health Labels
+    <string name="ALCOHOL_FREE">不含酒精</string>
+    <string name="IMMUNE_SUPPORTIVE">增強免疫系統</string>
+    <string name="CELERY_FREE">不含芹菜</string>
+    <string name="CRUSTACEAN_FREE">不含甲殼類動物</string>
+    <string name="DAIRY_FREE">不含乳製品</string>
+    <string name="DASH">適合高血壓飲食法</string>
+    <string name="EGG_FREE">不含蛋類</string>
+    <string name="FISH_FREE">不含魚類</string>
+    <string name="FODMAP_FREE">不含FODMAP食品</string>
+    <string name="GLUTEN_FREE">不含麩質</string>
+    <string name="KETO_FRIENDLY">適合生酮飲食法</string>
+    <string name="KIDNEY_FRIENDLY">適合腎臟病患者飲食</string>
+    <string name="KOSHER">符合猶太飲食規範</string>
+    <string name="LOW_POTASSIUM">低鉀</string>
+    <string name="LUPINE_FREE">不含羽扇豆</string>
+    <string name="MEDITERRANEAN">地中海飲食</string>
+    <string name="MUSTARD_FREE">不含芥末</string>
+    <string name="LOW_FAT_ABS">低脂肪</string>
+    <string name="NO_OIL_ADDED">除了基本成分中所含的成分外，不添加油類</string>
+    <string name="LOW_SUGAR">低糖</string>
+    <string name="PALEO">古式飲食</string>//不包括被認為是農產品的東西；穀物、豆類、乳製品、土豆、精製鹽、精製糖和加工油
+    <string name="PEANUT_FREE">不含花生</string>
+    <string name="PESCATARIAN">無肉類只含魚和乳製品</string>
+    <string name="PORK_FREE">不含豬肉</string>
+    <string name="RED_MEAT_FREE">不含紅肉</string>
+    <string name="SESAME_FREE">不含芝麻</string>
+    <string name="SHELLFISH_FREE">不含貝類</string>
+    <string name="SOY_FREE">無大豆或含大豆產品</string>
+    <string name="SUGAR_CONSCIOUS">每份少於4克糖</string>
+    <string name="TREE_NUT_FREE">無堅果或含堅果產品</string>
+    <string name="VEGAN">素食主義，不含肉、家禽、魚、奶製品、雞蛋或蜂蜜</string>
+    <string name="VEGETARIAN">素食主義，不含肉、家禽或魚</string>
+    <string name="WHEAT_FREE">無小麥，但可以含有麩質</string>
+
+
+
+
 </resources>

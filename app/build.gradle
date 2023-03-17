@@ -76,6 +76,7 @@ android {
     kotlinOptions {
         jvmTarget = '1.8'
     }
+    namespace 'com.example.test6'
 }
 
 dependencies {
